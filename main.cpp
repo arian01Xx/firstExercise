@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class SolutionEight{
+public:
+	int removePalindromeSub(string s){
+		int left=0;
+		int right=s.size()-1;
+		while(left<right){
+			if(s[left]!=s[right]) return 2;
+			left++;
+			right--;
+		}
+		return 1;
+	}
+};
+
+int main(){
+	
+	return 0;
+}
